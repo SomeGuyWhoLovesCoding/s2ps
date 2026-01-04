@@ -13,6 +13,7 @@ A comprehensive syntax highlighter and autocorrector for Script2Plot (s2ps) scre
   - **Music commands**: Turquoise (`#40E0D0`)
   - **Character commands**: Gray (`#808080`)
   - **Action commands**: Dark red (`#AA0011`)
+  - **Effect commands**: Autumn grey (`#8C8F75`)
   - **Textplate commands**: Tan (`#D2B48C`)
 - **Parameter highlighting**: Light blue (`#9CDCFE`)
 - **Function syntax**: Purple (`#c7cdff`) for names, light gray (`#b5c2cf`) for arguments
@@ -39,12 +40,13 @@ This extension contributes the following syntax highlighting rules through `conf
 
 ### Command Type Colors:
 - `s2ps.command.title`: Title commands
-- `s2ps.command.chprjtl`: Character projection commands
+- `s2ps.command.chrpjtl`: Character projection commands
 - `s2ps.command.scene`: Scene commands
 - `s2ps.command.sound`: Sound commands
 - `s2ps.command.music`: Music commands
 - `s2ps.command.char`: Character commands
 - `s2ps.command.action`: Action commands
+- `s2ps.command.effect`: Effect commands
 - `s2ps.command.textplate`: Textplate commands
 
 ### Syntax Elements:
@@ -72,7 +74,7 @@ The autocorrector activates automatically when editing `.s2ps` files. It provide
 
 4. **Intelligent Matching**:
    - Uses fuzzy matching to suggest corrections
-   - Considers character definitions from `@char` and `@chprjtl` commands
+   - Considers character definitions from `@char` and `@chrpjtl` commands
    - Case-insensitive with smart distance calculations
 
 The autocorrector runs in the background and provides suggestions through VS Code's suggestion interface. You can accept corrections by pressing `Tab` or `Enter` when suggestions appear.

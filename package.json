@@ -1,7 +1,7 @@
 {
   "name": "script2plot-syntax",
   "displayName": "Script2Plot Syntax",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "publisher": "veryexcitedcorporation",
   "engines": {
     "vscode": "^1.60.0"
@@ -64,6 +64,12 @@
             "scope": "s2ps.command.action",
             "settings": {
               "foreground": "#AA0011"
+            }
+          },
+          {
+            "scope": "s2ps.command.effect",
+            "settings": {
+              "foreground": "#8c8f75"
             }
           },
           {

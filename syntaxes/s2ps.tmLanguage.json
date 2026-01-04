@@ -61,6 +61,10 @@
 					"match": "^\\s*Action\\b"
 				},
 				{
+					"name": "s2ps.command.effect",
+					"match": "^\\s*Effect\\b"
+				},
+				{
 					"name": "s2ps.command.textplate",
 					"match": "^\\s*Textplate\\b"
 				}
