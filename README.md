@@ -72,7 +72,7 @@ The autocorrector activates automatically when editing `.s2ps` files. It provide
 
 4. **Intelligent Matching**:
    - Uses fuzzy matching to suggest corrections
-   - Considers character definitions from `@char` and `@chrpjtl` commands
+   - Considers character definitions from `@char` and `@chprjtl` commands
    - Case-insensitive with smart distance calculations
 
 The autocorrector runs in the background and provides suggestions through VS Code's suggestion interface. You can accept corrections by pressing `Tab` or `Enter` when suggestions appear.
