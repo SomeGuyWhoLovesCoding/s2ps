@@ -1,0 +1,82 @@
+{
+	"name": "Script2Plot Theme",
+	"type": "dark",
+	"colors": {
+		"editor.background": "#1e1e1e",
+		"editor.foreground": "#d4d4d4"
+	},
+	"tokenColors": [
+		{
+			"scope": "support.function.title.s2ps",
+			"settings": {
+				"foreground": "#FFFF00"
+			}
+		},
+		{
+			"scope": "support.function.char.s2ps",
+			"settings": {
+				"foreground": "#00FFFF"
+			}
+		},
+		{
+			"scope": "support.function.scene.s2ps",
+			"settings": {
+				"foreground": "#4B0082"
+			}
+		},
+		{
+			"scope": "support.function.sound.s2ps",
+			"settings": {
+				"foreground": "#0000FF"
+			}
+		},
+		{
+			"scope": "support.function.music.s2ps",
+			"settings": {
+				"foreground": "#40E0D0"
+			}
+		},
+		{
+			"scope": "support.function.character.s2ps",
+			"settings": {
+				"foreground": "#808080"
+			}
+		},
+		{
+			"scope": "support.function.action.s2ps",
+			"settings": {
+				"foreground": "#AA0011"
+			}
+		},
+		{
+			"scope": "support.function.textplate.s2ps",
+			"settings": {
+				"foreground": "#D2B48C"
+			}
+		},
+		{
+			"scope": "variable.parameter.expression.s2ps",
+			"settings": {
+				"foreground": "#9CDCFE"
+			}
+		},
+		{
+			"scope": "string.quoted.double.s2ps",
+			"settings": {
+				"foreground": "#ce9178"
+			}
+		},
+		{
+			"scope": "comment.line.s2ps",
+			"settings": {
+				"foreground": "#6A9955"
+			}
+		},
+		{
+			"scope": "keyword.control.s2ps",
+			"settings": {
+				"foreground": "#C586C0"
+			}
+		}
+	]
+}

@@ -3,27 +3,95 @@
 	"name": "Script2Plot Script",
 	"patterns": [
 		{
-			"include": "#keywords"
+			"include": "#commands"
 		},
 		{
-			"include": "#strings"
+			"include": "#function-calls"
+		},
+		{
+			"include": "#comments"
 		}
 	],
 	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.s2ps",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.s2ps",
-			"begin": "\"",
-			"end": "\"",
+		"commands": {
 			"patterns": [
 				{
-					"name": "constant.character.escape.s2ps",
-					"match": "\\\\."
+					"name": "s2ps.command.title",
+					"match": "^\\s*@title\\b"
+				},
+				{
+					"name": "s2ps.command.chrpjtl",
+					"match": "^\\s*@chrpjtl\\b"
+				},
+				{
+					"name": "s2ps.command.char",
+					"match": "^\\s*@char\\b"
+				},
+				{
+					"name": "s2ps.command.scene",
+					"match": "^\\s*Scene\\b"
+				},
+				{
+					"name": "s2ps.command.sound",
+					"match": "^\\s*Sound\\b"
+				},
+				{
+					"name": "s2ps.command.music",
+					"match": "^\\s*Music\\b"
+				},
+				{
+					"name": "meta.command.character.s2ps",
+					"begin": "^\\s*Character\\(",
+					"beginCaptures": {
+						"0": { "name": "s2ps.command.character" }
+					},
+					"end": "\\)",
+					"endCaptures": {
+						"0": { "name": "s2ps.command.character" }
+					},
+					"patterns": [
+						{
+							"name": "s2ps.parameter",
+							"match": "[^)]+"
+						}
+					]
+				},
+				{
+					"name": "s2ps.command.action",
+					"match": "^\\s*Action\\b"
+				},
+				{
+					"name": "s2ps.command.textplate",
+					"match": "^\\s*Textplate\\b"
+				}
+			]
+		},
+		"function-calls": {
+			"patterns": [
+				{
+					"name": "meta.function-call.s2ps",
+					"begin": "\\b([A-Za-z_][A-Za-z0-9_]*)\\(",
+					"beginCaptures": {
+						"1": { "name": "s2ps.function.name" }
+					},
+					"end": "\\)",
+					"endCaptures": {
+						"0": { "name": "s2ps.function.paren" }
+					},
+					"patterns": [
+						{
+							"name": "s2ps.function.argument",
+							"match": "[^)]+"
+						}
+					]
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.s2ps",
+					"match": "^\\s*#\\s.*$"
 				}
 			]
 		}

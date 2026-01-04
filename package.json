@@ -1,25 +1,116 @@
 {
-  "name": "s2ps",
-  "displayName": "Script2Plot extension",
-  "description": "Program Plotagon Plots in a cool fashion.",
+  "name": "script2plot-syntax",
+  "displayName": "Script2Plot Syntax",
   "version": "0.0.1",
+  "publisher": "VeryExcited Corporation™",
   "engines": {
-    "vscode": "^1.107.0"
+    "vscode": "^1.60.0"
   },
-  "categories": [
-    "Programming Languages"
-  ],
+  "categories": ["Programming Languages"],
+  "activationEvents": ["onLanguage:s2ps"],
+  "main": "./extension.js",
+  "repository": "github:SomeGuyWhoLovesCoding/s2ps",
   "contributes": {
     "languages": [{
       "id": "s2ps",
-      "aliases": ["Script2Plot Script", "s2ps"],
-      "extensions": [".s2ps"],
-      "configuration": "./language-configuration.json"
+      "aliases": ["Script2Plot", "s2ps"],
+      "extensions": [".s2ps"]
     }],
     "grammars": [{
       "language": "s2ps",
       "scopeName": "source.s2ps",
       "path": "./syntaxes/s2ps.tmLanguage.json"
-    }]
+    }],
+    "configurationDefaults": {
+      "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          {
+            "scope": "s2ps.command.title",
+            "settings": {
+              "foreground": "#FFFF00"
+            }
+          },
+          {
+            "scope": "s2ps.command.chrpjtl",
+            "settings": {
+              "foreground": "#00FFFF"
+            }
+          },
+          {
+            "scope": "s2ps.command.scene",
+            "settings": {
+              "foreground": "#4B0082"
+            }
+          },
+          {
+            "scope": "s2ps.command.sound",
+            "settings": {
+              "foreground": "#0000FF"
+            }
+          },
+          {
+            "scope": "s2ps.command.music",
+            "settings": {
+              "foreground": "#40E0D0"
+            }
+          },
+          {
+            "scope": "s2ps.command.char",
+            "settings": {
+              "foreground": "#808080"
+            }
+          },
+          {
+            "scope": "s2ps.command.action",
+            "settings": {
+              "foreground": "#AA0011"
+            }
+          },
+          {
+            "scope": "s2ps.command.textplate",
+            "settings": {
+              "foreground": "#D2B48C"
+            }
+          },
+          {
+            "scope": "s2ps.parameter",
+            "settings": {
+              "foreground": "#9CDCFE"
+            }
+          },
+          {
+            "scope": "s2ps.function.name",
+            "settings": {
+              "foreground": "#c7cdff"
+            }
+          },
+          {
+            "scope": "s2ps.function.argument",
+            "settings": {
+              "foreground": "#b5c2cf"
+            }
+          },
+          {
+            "scope": "comment.line.s2ps",
+            "settings": {
+              "foreground": "#6A9955",
+              "fontStyle": "italic"
+            }
+          }
+        ]
+      }
+    },
+    "keybindings": [
+      {
+        "command": "s2ps.acceptQuickFixAtCursor",
+        "key": "enter",
+        "when": "editorTextFocus && editorLangId == s2ps"
+      },
+      {
+        "command": "s2ps.acceptQuickFixOrTab",
+        "key": "tab",
+        "when": "editorTextFocus && editorLangId == s2ps"
+      }
+    ]
   }
 }
