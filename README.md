@@ -39,7 +39,7 @@ This extension contributes the following syntax highlighting rules through `conf
 
 ### Command Type Colors:
 - `s2ps.command.title`: Title commands
-- `s2ps.command.chrpjtl`: Character projection commands
+- `s2ps.command.chprjtl`: Character projection commands
 - `s2ps.command.scene`: Scene commands
 - `s2ps.command.sound`: Sound commands
 - `s2ps.command.music`: Music commands
