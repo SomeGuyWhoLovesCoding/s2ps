@@ -2,7 +2,7 @@
   "name": "script2plot-syntax",
   "displayName": "Script2Plot Syntax",
   "version": "0.0.1",
-  "publisher": "VeryExcited Corporation™",
+  "publisher": "veryexcitedcorporation",
   "engines": {
     "vscode": "^1.60.0"
   },
