@@ -79,12 +79,6 @@ The autocorrector runs in the background and provides suggestions through VS Cod
 
 *The type of autocorrector is similar but better than the claude.ai version made with react.js I've eventually scrapped.
 
-## Known Issues
-
-- Autocorrector may occasionally be overzealous with complex nested dialogue structures
-- Some specialized character syntax patterns may require manual correction
-- Performance may slightly degrade with very large script files (>10,000 lines)
-
 ## Release Notes
 
 ### 0.0.1
