@@ -1,0 +1,25 @@
+{
+  "name": "s2ps",
+  "displayName": "Script2Plot extension",
+  "description": "Program Plotagon Plots in a cool fashion.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "s2ps",
+      "aliases": ["Script2Plot Script", "s2ps"],
+      "extensions": [".s2ps"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "s2ps",
+      "scopeName": "source.s2ps",
+      "path": "./syntaxes/s2ps.tmLanguage.json"
+    }]
+  }
+}
